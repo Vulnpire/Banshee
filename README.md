@@ -100,13 +100,34 @@ Run without args to see help:
 
 Flags:
 - -h, --help: Display help
+
+<img width="765" height="860" alt="image" src="https://github.com/user-attachments/assets/9073f044-cbf0-4455-8fc6-8a99df8370e4" />
+
 - -u, --url <TARGET>: Domain or IP to target (required unless using -f)
+
+<img width="447" height="295" alt="image" src="https://github.com/user-attachments/assets/a4ff44cb-5efa-41f4-8500-299a950494d0" />
+
 - -f, --file <FILENAME>: File with one domain per line
 - -e, --extensions <EXT>: Comma-separated list or file with extensions
+
+<img width="430" height="62" alt="image" src="https://github.com/user-attachments/assets/85591d81-4688-49fa-9806-aa888e0f2caa" />
+
 - -w, --word <DICTIONARY>: Comma-separated list or file of paths/keywords for inurl: searches
+
+<img width="1106" height="219" alt="image" src="https://github.com/user-attachments/assets/3383b816-93b1-4638-abeb-a0b1c7ed5cac" />
+
 - -c, --contents <TEXT>: Comma-separated list or file for intext: searches
+
+<img width="1313" height="149" alt="image" src="https://github.com/user-attachments/assets/0bdfb381-61ba-41aa-8872-ccb3239550c7" />
+
 - -q, --query <QUERY>: Custom query (full control)
+
+<img width="1551" height="222" alt="image" src="https://github.com/user-attachments/assets/0d43920c-5cf1-40c6-9f06-a149de79b940" />
+
 - -s, --subdomains: Subdomain discovery for the target
+
+<img width="403" height="324" alt="image" src="https://github.com/user-attachments/assets/913bed2c-d45f-4f5c-a47f-1fb6f9cf01ee" />
+
 - -a, --recursive: Include subdomains in queries (aggressive mode)
 - -x, --exclusions <EXCLUSIONS>: Comma-separated list or file of sites to exclude
 - -p, --pages <PAGES>: Number of pages to paginate through (default 10)
