@@ -87,8 +87,8 @@ Follow these steps:
 - Replace defaultCX with your own CSE ID if needed and rebuild, or fork with your CX.
 
 6) Add API keys file
-- Create directory: ~/.config/banshee/
-- Create file: ~/.config/banshee/keys.txt
+- Create directory: ~/.config/banshee/ - `mkdir -p ~/.config/banshee`
+- Create file: ~/.config/banshee/keys.txt - `vi ~/.config/banshee/keys.txt`
 - Put one API key per line; Banshee rotates among them:
   ```
   AIzaSyExampleKey1
@@ -243,7 +243,7 @@ Examples:
 
 Banshee is intended for legitimate security testing and research. Use it only on systems and domains you own or are explicitly authorized to test.
 
-You are solely responsible for how you use this tool, for complying with all applicable laws, regulations, and third‑party terms (including Google’s API terms), and for respecting target scopes and permissions. The author and contributors are not liable for misuse, damage, or violations arising from the use of Banshee. Proceed ethically and responsibly.
+You are solely responsible for how you use this tool, for complying with all applicable laws, regulations, and third‑party terms (including Google’s API terms), and for respecting target scopes and permissions. The authors and contributors disclaim liability for misuse, damage, or violations arising from the use of Banshee. Proceed ethically and responsibly.
 
 
 ## License
