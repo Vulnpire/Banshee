@@ -21,6 +21,13 @@ It supports:
 
 Version: 1.33.7
 
+## Why Banshee?
+
+- Passive reconnaissance: Reduce direct interaction with target infrastructure by relying on Google’s indexed view.
+- Precision at scale: Automatically generate and paginate structured dorks across multiple site scopes (*.domain, *.*.domain, etc.).
+- Wordlist‑driven discovery: Feed in a dictionary of filenames/paths (e.g., admin.php, backup.zip, .git, /api/) and let inurl queries expose indexed traces.
+- Robust execution: Key rotation, adaptive delays, domain batching, and graceful cancellation keep long hunts smooth and resilient.
+- Clean output: Link filtering and de‑duplication cut noise and keep results practical.
 
 ## Quick start
 
@@ -129,6 +136,9 @@ Flags:
 <img width="403" height="324" alt="image" src="https://github.com/user-attachments/assets/913bed2c-d45f-4f5c-a47f-1fb6f9cf01ee" />
 
 - -a, --recursive: Include subdomains in queries (aggressive mode)
+
+<img width="1180" height="678" alt="image" src="https://github.com/user-attachments/assets/6f601e47-ced1-434f-aba7-6af2ec5e0333" />
+ 
 - -x, --exclusions <EXCLUSIONS>: Comma-separated list or file of sites to exclude
 - -p, --pages <PAGES>: Number of pages to paginate through (default 10)
 - -d, --delay <SECONDS>: Static delay between requests (otherwise adaptive)
@@ -198,6 +208,13 @@ Examples:
   - First Ctrl+C: cancels context and finishes in-flight operations, printing partial results
   - Second Ctrl+C: forces exit (code 130)
 
+## Operational guidance
+
+- Passive by design: Results come from Google’s index. This minimizes direct touch on targets compared to active crawlers.
+- Wordlist strategy: Provide a dictionary of paths or filenames; Banshee will apply targeted inurl queries to surface indexed paths that resemble crawler findings—without directly crawling the site.
+- Scope control: Combine -a with -x exclusions to broaden scope while keeping noise down.
+- Output hygiene: Use -o to accumulate a clean, deduplicated corpus across runs.
+- Quota strategy: Maintain several API keys in keys.txt; reduce pages or increase delay for long sessions.
 
 ## Tips
 
