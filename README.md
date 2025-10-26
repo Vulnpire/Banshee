@@ -190,7 +190,6 @@ Examples:
   ./banshee -f domains.txt -w wordlist.txt
   ```
 
-
 ## How it works
 
 - Builds Google CSE queries using:
@@ -223,6 +222,17 @@ Examples:
 - Exclusions: Use -x to cut noise (e.g., docs, blogs, cdn subdomains).
 - Output: Use -o to persist results and avoid duplicates across runs.
 
+## Axiom Support
+
+```
+[
+        {
+                "command":"/home/op/go/bin/banshee --url input --delay 5 | anew output",
+                "ext":"txt",
+                "threads":"3"
+        }
+]
+```
 
 ## Troubleshooting
 
