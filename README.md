@@ -224,7 +224,7 @@ Examples:
 
 ## Axiom Support
 
-```
+```json
 [
         {
                 "command":"/home/op/go/bin/banshee --url input --delay 5 | anew output",
