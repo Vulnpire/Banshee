@@ -224,6 +224,8 @@ Examples:
 
 ## Axiom Support
 
+`»  cat ~/.axiom/modules/banshee.json`
+
 ```json
 [
         {
